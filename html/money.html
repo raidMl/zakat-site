@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>a{text-decoration: none;}
+    a:hover{opacity: 0.7;}
+    
+    img{border-radius: 20%; border: 2px solid black;}
+#dj{
+  position:absolute;
+  left: 20px;
+}    
+#alnis{color: #d02222;display: none;}
+#enter{color: #d02222;display: none;}
+
+/* @media (max-width: 700px) {    body{height:auto!important;}} */
+
+</style>
+<link rel="stylesheet" href="../css/zakatindex.css">
+
+    <script src="../js/jquery-3.5.1.min.map.js"></script>
+
+    <link rel="stylesheet" href="../css/templatemo-chain-app-dev.css">
+</head>
+
+<body>
+
+<!--#52df9e  #7be365  -->
+    
+<!-- ***** Preloader Start ***** -->
+<div id="js-preloader" class="js-preloader">
+
+  <div class="preloader-inner">
+    <span class="dot"></span>
+    <div class="dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class=" row"><img  class="col" src="../img/logo.png" height="100px" width="100px"></div>
+
+  <!-- <h1 style="display: block;">زكاتي</h1> -->
+</div>
+<!-- ***** Preloader End ***** -->
+<!--#52df9e  #7be365  -->
+<nav data-wow-duration="0.75s" data-wow-delay="0s" class="navbar navbar-expand-lg navbar-light bg-warning"style='background-color:#3fd791!important; position:fixed;width:100%;z-index: 1' >
+        <div class="container " dir="rtl">
+          <a class="navbar-brand fw-bold" href="../index.html"  ><img src="../img/logo.png" class="imgg" height="40" width="40">  زكاتي </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-center fw-bold active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     أنواع الزكاة
+                    </a>
+                    <ul  class="dropdown-menu text-center fw-bold" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-center" href="money.html">
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABrElEQVRIid2VvS9DURjGf5RYWsIoGERJCJqQsEvMPjaJlFisFsTKZGwYJcTQqTGJ8CdgsUgbX0lNviZNRHzUcJ8bx3Xu7dVu3uQM9/097/Oe856TFsJFP5AB8loZ5SqKPFAMufJ+JtUBDc483ymgTStVQhsq1rS71Uo0YU4QNGuXlXWCTkrMl+97ipfToBp4pvQFFwiYRNCIekNupAj0hNT+MH9Q8SEQU77JaBwTKwL3f2nSCFyrcB+oNdgIkDa+a4EDaS+BhlLmVcCeCk6AqMGSwB3wAqwb+ShwqpqMPHxjWsJHoNnItwPvwLGxgTGDNwNPyk/5mdfw/eySHjaq/BLQDVwBKx7NrDQ38voVkxKcAxEPawXecOac8NlgBMjKY9wm2BVc9DGYw3nzbzg/DbZZL8tj22ZwIdjn0wCgBTiSbsLCE2I5W3FBsN7CFnBeShcwKN26Rdcg9uwmzMtwj+ydPzivagDnYgvK3Vp0bq31qebUfcjCaoAd4EOaPaDOohsWz9oabAqmbVAxj300bmzJY8MG48Ar4f8m/dYr0OG3gxngswLzT3n8o/gC9NGaAIb7nW0AAAAASUVORK5CYII="/>
+                        زكاة المال</a></li>
+                      <li><a class="dropdown-item " href="animals.html" >
+                        <img dir="rtl" height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAEe0lEQVR4nO3ZW6gVVRzH8c+xUycyzUowIrrYXQ0quzxEFBk9FEQgUZZWGhE+VHSxsgItiTwR0VUFC6NMonwwKgosKkKwTLLSEk0fRKikm2WUJz32sPbOdebM3mdm79n7KM0Xhj17rVnrv/6/Wes/a/5DSUlJSUlJSUlJSUlJSUlJSUlJSUlJScn/hY4a5UNxKU7Ege0bDtiK1VjfZrsIgszAb9gziEcv3sYZrXW3L0OwpEAnijh68DAOapXT8RKYgcej/1twpLAcimQTltao68JYTBBuSJW1uBmfFTyW/xiq77R/UVj78xR/V6dkGM+ZQhyI2+3CEzikSV9TuTIytMneKTemYrgo55epHXiTdGIm/kr0sREXN+poLe6ODDyfqHtOMc4vwsENjO00rEj01Yv5GN5Af6nMjjqfnagbjo8N7OAOfITXsRyr8AmexXlNjm8I7qjYiG1uweVN9o36AhCCUze2JwawG+/jBsUHyzRG4wP9xV+NpzARoxrpeCABqgzDRbhJiBsNGWuSDtyi/l5lPRYKN+aELJ1mFWBf4hghqGaJP1uFPc4UNYLw/ihAlVG4SnhErsDf6osxKW4cbzbayaHCNvfwAvr6UZgJ9+ACzI3qtuDXxPV74j/tFOAIIZIvx8/4Ct8LwbVVW91FGCmIPV24+6/FF3S2yHCS8YLjyTvehXuFre81wiasaHqFrfTatMp2zYB56k/38fi88ttW2iFAp2yOjcAzLR5LP9ohwC4hUGXhnFYOJI12LYFZEtG3Br+klHXgeiGAZX2Ryky7BHhB2LO/id/rXLcwpWwSFgsbmfkKFqFdTwF4r3J0ClN9Ai7BucJLzkI8ktIudvjWyu902WbUgFQF6InKdhbRcR12YWXleDTD9Utwob3OFypCVYClmBadN8NJ+FB47K3Ht/imcr4OmwURsrJHcJYWidAMo3Ebjo/Kbld/L75T2JS8IUz5a4UU2EDJkg4sSPS1QP+YMDeqf6gxt7IxDX9WDG2Iyo/D1+qLkHbsxnd4q+LESSk2a4lQDeZdgrjVusnNOjkGc3C1sKcm5AReTQwi7SPGCJyPqRWHlglb3ayCbKwxpjQRVuJJfZ3fEY15QE4R1uYmnByVb4467MWaFCe+xKkZ7UyM2n2KxwRhNkhPvtYiTYTkcWfGMYEHooYzo/J1dQz04mn5Ep3dUfv7E3VdwozJIgBBhAf1zxrvkNN5aidEjq4YWZMwsg1X5DUiJE2rfUxIqR8muwBVjhJSdPcJaz7ztI8ZKCN0VmJg4xqwcQD+sDfgHZZyTSMCNEXWrfAXwlqvclkDtsYKmSDCmt/eQB+Fk+dd4OXofGoDtuJvAy37xpeXPAIsxj+V83E4O6etWIBVOdu2jDwCbMO70f8bc9ra7wWAl6Lz6+RLZh5b+e3RN54MKnkFeAc/Vc5Hyvddrlt4Rs8Vcvf7BHkF6BFeT6ucnqNtt/CYm5XTZktpJCEyR3hH6MIrxQ5n8JiiwDeoJhiCH/R/w2yL4cmVY7A+l1UZi7uEXEPL+Rf3TenOCXWWdQAAAABJRU5ErkJggg=="/>                        زكاة الأنعام
+                        
+                      </a></li>
+                      <li><a class="dropdown-item text-center" href="agro.html" dir="rtl">
+                        <img  dir="rtl" height="25px" width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE2ElEQVRoge2ZW2xVRRSGvyPFFtFoo5SqMdIqhgcVUUSxUaNBq/EWfJCkSrxEo0QkiLcENTGSqIiJMZp4e1QhNWiUNy8vaIgWBWJUQK2YmkpqS7EUkFZ7un34Z5zZs/c5KaF7n0PSP5n0nDXr7PnXnrXWrFmFCWSKGuBC4ARPNhm4BlgNfAF0AyPAl7mzGyNagS4gAr5FRt0E/GZk4finMjTLYyl6yz7RT4FR8/lntCOtwAIj+70iTMvgOqCISL8IPIgzZhR4BDjG0281c1XlWscCuxGxlUY2GRg0sldTfrPGzL2QB8FyuAj4BlgHPIxIfQ0UPJ0eIz8n+O0koNPMLcicaRk0AwMkA/dOT2eKkQ0RdymAx8zcLrRzFUEBBXAEbAU24wy52NOrxcVMg/ndLOB1o1sEbsiNdQquMkT6gOlAPToTIuB2T+8u4rs1FHz/BKXm3HEccCLwliHynDf3kJFtQm50Bi74/dGDSwA2pqbmQ1+Yi/L9QWCPITHfm68H9ht5B7APd0a0oaw2xejWEE/Nc7KnL0wDekm+3TATbQ3mB4DTSjzzJVywTxp/yul4FxfYy1CQRsBCT6cGt1N2dKSQLABPogQwgmqvXNCEiA+jlAvwMiK6wdNbRHodtQlYDMxDwW8zXBG5V+Y4FbgNlRUR8KE3dxKw18jXoBTq78ZeVN3uJ924P1B5kjnmesSsGy0PdNalEOxDO2NTaj068bs9neUo8DPHVBSAEfEq9v5A7w2Shlxf4pn1OJdqL7VwePQfKZ5GcfEjykrbjDxMkfNJ4uoSz6zFlSFnHynBsaAW5/uXGdls5F6DwOlGdi3ufhGODcCt6CW0AM8jl4uAv8j4zJgJvAY8ahbcGcy3G3kn8IRHbBTt2CvAe6QXkX450pSlEeehN+Uvuj7QWZxCrI/kGXAyMsomiF4US1dmxP1/1OBO410egY8CvXtIGvJ4mefau8kBFOiZY4lZ8Fd0NizF+bJ/R7Anuz86cTHjoxnYYnS6gLqMuMdgd6PNfC94JFYZ2aXAv6T7/SBynSXACrSTw2buTzIO7NnAV8Ba5EpDqDy3WOgR3YjcI0Itm3eAu1HMvE965ioavVOyNKKZZGDvDnQaUsjtQ6d9iAtwu1pE5cyZWRD3UQA+N4tuA743nw8S9+PzSRqyscxzm3EVwKJxZ52CK3C+24DuGLbDcaOnt5L0eFhFsknQgioAm2obs6Pv8LZZ8FlPtox4BpqDi4m0MQB8DHyAOoZW/hOKvVyw0yx6iSerw5Xaf+MyzgG0M+einbsF9XBDw3qBZ3BX2FxgGwEzA7mNFTuGURCHKKBzxh6aKxjnDshYq99u83eWJ6sDzgr0RlD5ESJC9VSX+d5kdHPHapL3gTbSY2E7amPa+/bxqF9l7yn95FSOp2EGcMgQeQqV4v048oeAX4hfTwdRZvMba1tQ7FQU9+J83I49aGdswNaiWOjxdIrIgAeoUGcwDXcQN6RUO2YaLhGszYPY4Vx1G1FPyce8Ms8tms+Zlx2Hg0ZgB3rDO9DOWDdrB25GAdyCTnHbWexHl6+qQGiELSXuwyWAtPEZShJVgVJGWMxA//rajM6a7cCbwOXE//NUUUwHfsA1FEo1lKsaE0ZUCyaMqCZ8R+nsdFShA93Hj2ojJlAt+A8zC+oCao9DKAAAAABJRU5ErkJggg=="/>
+                        زكاة الحرث
+
+                      </a></li>
+                      <li><a class="dropdown-item text-center" href="metal.html">
+                        <img dir="rtl" height="25px" width="25px"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABRklEQVRoge2XzU0DMRBGn/ea0EMSGiGFkJ9O0gm5AzVkxYEq4AYNkHCE5GBHIATE9tgag+ZJc9n1txpbs/u0YBiGYRiGYfwFHHAP7COrD5nmmBK/iWNdqHR6gjW+uVXE2lVYe1W1owwGwBZ4B84j1o+AN2AHnFXsK5kl/oQ3CZlNyCyqdJRJT3pTC9I3X5URfqRSx2QAvBA/jr/SSR+AP1kHXOPfk1hegduQvSzQRzQOuCP9E5tb1TyT4wlpVfGM1BNNeEbqiWY8I/VEM56ReqIJz4zxI7EFhgm5IR/jJM2PTy2O8cgc/xm8wc9sLLuQcQXy84Rc8v+Edv3oGQ1PSGv63Ua0PZGTX3+9oe2JYp7R9oQkv/x8UdsTknx/vDBB3xPS/KQDZuh7QpqfOeCBAn9oyjx2wLN2FwV40m7AMAzDMAzjP3MA4lk/V88ChjUAAAAASUVORK5CYII="/>              
+                          زكاة المعادن</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="about.html"> معلومات حول الزكاة</a></li>
+                    </ul>
+                  </li>
+
+
+              <li class="nav-item  text-center">
+                <a class="nav-link active fw-bold" aria-current="page" href="source.html" dir="rtl"> المصادر الدينية
+              </a>
+              </li>
+              <li class="nav-item  text-center">
+                <a class="nav-link active fw-bold" aria-current="page" href="edit.html" dir="rtl">الاعدادات</a>
+              </li>
+
+              <li class="nav-item  text-center">
+                <a class="nav-link  fw-bold active" href="../index.html#" dir="rtl">تواصل معنا</a>
+              </li>
+              <li class="nav-item  text-center">
+                <a class="nav-link  fw-bold active" href="../index.html#" dir="rtl">حول الموقع</a>
+              </li>
+             
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+<div   style="background-image: linear-gradient(#dee2e0,#7be365);background-size: cover; background-repeat: no-repeat ;height:100vh;">
+<div class="container" >
+    <div class="row mt- text-center " >
+        <div class=' mt-5 col-md' dir="rtl">       
+          <h4 class="text-center mt-5" >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABmJLR0QA/wD/AP+gvaeTAAAEjUlEQVRoge2aW4hWVRTHf35j43hJlBnI1CLKLMmcRKgXSUkisxyCsCsEatJTd3sSQSGiILxFL9FD9BCUCVFZPSS9SBBJeYnuo2EWIyONNWNjTjPjw9pH97e+fc6+nPM1Ev5h4+zz7f9/rXX2bZ29HUdzUAPuBFYCNwOXmefHgS+AD4BPgJEm2a8US4HvgVFP+Q5YUrXxcYm894GZjuc1oNP8G4IR4ADunvod6Ip1bHwswaAGLErkap2FOb/1pAimBnQAuCug3UngXeCQqS8A7gWmBXAPprmWhvvwz5G3cTs+HXgngH9/imNlekhjF/Cz+bsH2I44ptGHOPs5MMM8m4P0nM9G01ADBqh/o0+W0HtKaf0NtKQ6loIR4Bv1rDNRy8U9BAynCKUGBI1DosqAkodblQHdAFySoDMemOfRDkaVAU0A5iboXA+0ebSDUSaggzSuYinDTnNGOb9v/efoxr+fxJbuMg6V6SFozl5RSrNsQL+W5LtwrAmaQXgIGKL6IfcvsDrVqdTPhzXA6w7+UWAD8E+gTivwAnClej4CrAXeSPQvCquQt6jf7H5gVg6nHbgamOr4babhunpK53eV41bk7Wvjn+Y4m2Gbafd4zu9TjYbWPQ0srsJxF65CzgS00T3ARA/XFxDIxvyxQ/8E0ruVog1ZTrWxvcBkD7cD2GnaP09xFj3ZaGo7XyMBV4YtDiOHjbN5mIZMar0SHgGWF/A6jLa293KpCCwsQ1J5W/wvYH4Bpw34yuFUVoaQY648zDc2bM4wcqJUCq3ATw6HHvTwnlPtezmf+2XlF6Ofhwccdn8gLaM/h2ccojsDePus9oPAbGTP2qW0bvfouM4enogNIkM78IcS66F43mSwefut5yuU3kaPToexqVe96XmEolzuMQdxsxH0wR5K9iFiNzLhs+LLJU8Am9SzduDRAB/q0IKM8Zgxb+NbizdMuSPfVmRl1J8YUYl1F41jd20E/yXF7UMmeSrWOPwJOeg8hzcVuZfw3gEZFrqHs6zixhhHDFqR4WdrRSWuxxT5lQQnrqB+tcvKGeDZBL1Xlc7RUOJ1DieKdvYitADrjHGtuT5SS6+Qo8C1IcTVijSMP1/zYSKwVemeBi6P0JhCY8byiG7kWimuUfXDwKkIwy4MAk9TP+4nIDd8oRhA5qWNObqRK6AZqh48Vg1eRDbWrNhGX/M55IH2RfvqDGiSqvdHGu1HNuSs2N8y2l7sHeufqj5FN3AFNKjqscngl6pu7+p6iB2J1Na+aF+d90O9qh5y22bjM2TZn23qq5BPiZPUZwxDyF1tDHQqpn11Yj2Nu3zs6dAK/EdcGyI1a8YXWyNoP1vmML4g0jjAHbiPivtI+wTodGjdFkJsQ27QbOK2BAdA3uotwG9G52H8Byp52KF8OkXEOcNuRR4gcFfOQfYfMVJPb+YiAdg+7XY1zJsbS5HJbeNH0g/SlwOXAh+RtknfROMLXQl8GCOyh+JJPZZlLwnH2PNovOm+EEo/kkAnoQtJ98c6iKycAe4ucjik2+5Brk4uBLwFvDfWTlzERfyfcRZ4AT5hwHXWFgAAAABJRU5ErkJggg=="/>
+            زكاة المال
+
+
+
+    <div class="row mt-5 text-center" >
+    <div  class="col-md mt-3">
+
+<input type="number" id="mon" class="form-control" placeholder="ادخل المال" dir="rtl"  style="padding: 10px 20px;" min="0.00" step="0.10" oninput="validity.valid||(value='');">
+
+    </div>
+
+    
+</div>
+
+<div class="row mt-5 container"  dir="rtl">
+  <span dir="rtl"> المبلغ المزكى</span>
+    <div value="" id="nissa"  class='text-center mt-2 col-md alert alert-success ' style="background-color:#3a763e; color: white ; " dir="rtl">  
+      <span id="da">0000.00</span> <span id="dj">دج</span></input>
+  </div> 
+  
+  <span dir="rtl" id="alnis"> <svg height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="32" height="32"
+    viewBox="0 0 172 172"
+    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M82.41667,7.16667c-45.44383,0 -82.41667,36.97283 -82.41667,82.41667c0,45.44383 36.97283,82.41667 82.41667,82.41667c45.44383,0 82.41667,-36.97283 82.41667,-82.41667c0,-45.44383 -36.97283,-82.41667 -82.41667,-82.41667zM82.41667,164.83333c-41.495,0 -75.25,-33.755 -75.25,-75.25c0,-41.495 33.755,-75.25 75.25,-75.25c41.495,0 75.25,33.755 75.25,75.25c0,41.495 -33.755,75.25 -75.25,75.25z"></path><path d="M82.41667,43c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v64.5c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-64.5c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path><path d="M82.41667,121.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v7.16667c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-7.16667c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path></g></g></svg>
+    المبلغ لم يتجاوز النصاب</span>
+  <span dir="rtl" id="enter">
+    <svg  height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="32" height="32"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M82.41667,7.16667c-45.44383,0 -82.41667,36.97283 -82.41667,82.41667c0,45.44383 36.97283,82.41667 82.41667,82.41667c45.44383,0 82.41667,-36.97283 82.41667,-82.41667c0,-45.44383 -36.97283,-82.41667 -82.41667,-82.41667zM82.41667,164.83333c-41.495,0 -75.25,-33.755 -75.25,-75.25c0,-41.495 33.755,-75.25 75.25,-75.25c41.495,0 75.25,33.755 75.25,75.25c0,41.495 -33.755,75.25 -75.25,75.25z"></path><path d="M82.41667,43c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v64.5c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-64.5c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path><path d="M82.41667,121.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v7.16667c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-7.16667c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path></g></g></svg>
+    ادخل المال</span>
+
+
+  </div> 
+
+<div class="row mt-5 text-center" >
+    <div  class="col-md mt-3">
+
+<button type="text" class="btn btn-success mb-5"   dir="rtl" onclick="calcmoneyzakat(foo);"> حساب</button>
+    </div>
+
+</div>    
+</div>
+</div>
+<script  src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/zakatCalc.js"></script>
+<script src="../js/modernizr-custom.js"></script>
+<script src="../js/jquery-3.5.1.min.map.js"></script>
+
+<script src="../assets/js/owl-carousel.js"></script>
+ <script src="../assets/js/animation.js"></script> 
+ <!-- <script src="assets/js/imagesloaded.js"></script>  -->
+<script src="../assets/js/popup.js"></script>
+<script src="../assets/js/custom.js"></script> 
+</body>
+</body>
+
+</html>
