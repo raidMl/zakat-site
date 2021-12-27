@@ -47,17 +47,17 @@
   <!-- <h1 style="display: block;">زكاتي</h1> -->
 </div>
 <!-- ***** Preloader End ***** -->
-<!--#52df9e  #7be365  -->
-<nav data-wow-duration="0.75s" data-wow-delay="0s" class="navbar navbar-expand-lg navbar-light bg-warning"style='background-color:#3fd791!important; position:fixed;width:100%;z-index: 1' >
+<!--#52df9e  #7be365   #5fce84!important-->
+<nav data-wow-duration="0.75s" data-wow-delay="0s" class="navbar navbar-expand-lg navbar-light bg-warning "style='background-color:#5fce84!important; position:fixed;width:100%;z-index: 1' >
         <div class="container " dir="rtl">
-          <a class="navbar-brand fw-bold" href="#"  ><img src="../img/logo.png" class="imgg" height="40" width="40">  زكاتي </a>
+          <a class="navbar-brand fw-bold" href="../index.html"  ><img src="../img/logo.png" class="imgg" height="40" width="40">  زكاتي </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle text-center fw-bold active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      أنواع الزكاة
                     </a>
@@ -88,14 +88,14 @@
                   </a>
                   </li>
               <li class="nav-item  text-center">
-                <a class="nav-link active fw-bold" aria-current="page" href="html/edit.html" dir="rtl">الاعدادات</a>
+                <a class="nav-link active fw-bold" aria-current="page" href="edit.html" dir="rtl">الاعدادات</a>
               </li>
 
               <li class="nav-item  text-center">
-                <a class="nav-link  fw-bold active" href="#" dir="rtl">تواصل معنا</a>
+                <a class="nav-link  fw-bold active" href="../index.html" dir="rtl">تواصل معنا</a>
               </li>
               <li class="nav-item  text-center">
-                <a class="nav-link  fw-bold active" href="#" dir="rtl">حول الموقع</a>
+                <a class="nav-link  fw-bold active" href="../index.html" dir="rtl">حول الموقع</a>
               </li>
              
               
@@ -105,8 +105,8 @@
         </div>
       </nav>
 
-<div   style="background-image: linear-gradient(#dee2e0,#7be365);background-size: cover; background-repeat: no-repeat ;height:100vh;">
-<div class="container " >
+      <div style="margin:0;padding-bottom:160px;background-image: linear-gradient(#dee2e0,#7be365);background-size: cover; background-repeat: no-repeat ;height:100%;">
+        <div class="container " >
 
   <div class="row mt- text-center " >
     <div class=' mt-5 col-md' dir="rtl">  <h4 class="text-center  mt-5" >
@@ -122,50 +122,44 @@
 
         </div> -->
 
+        <select   id="selects"       onchange="change_animal()" class="form-select mt-5" aria-label="Default select example" dir="rtl" style="height: 45px;" >
+          <option  value="0" >الأغنام</option>
+          <option value="1" >الأبقار</option>
+          <option  value="2" >الابل</option>
 
+        </select>
 
     <div class="row mt-5 text-center" >
     <div  class="col-md mt-3">
 
-<input type="number" id="mon" class="form-control" placeholder="  ادخل وزن الحبوب بالكيلوغرام" dir="rtl"  style="padding: 10px 20px;" min="0.00" step="0.10" oninput="validity.valid||(value='');">
+<input type="number" id="mon" class="form-control" placeholder=" أدخل العدد " dir="rtl"  style="padding: 10px 20px;" min="0.00" step="1" oninput="validity.valid||(value='');">
 
     </div>
 
     
 </div>
-<div dir="rtl" class="mt-5 ">
-  <input type="checkbox" class="ray " value="artificial" >
-  <span class="span " >ري اصطناعي</span>
-  <br>
-  <input type="checkbox" class="ray" value="natural" > 
-<span class="span">ري طبيعي</span>
-    </div>
+
     
 
 <div class="row mt-5  container"  dir="rtl">
-  <span dir="rtl"> الوزن المزكى :</span>
+  <span dir="rtl"> العدد المزكى :</span>
     <div value="" id="nissa"  class='text-center mt-2 col-md alert alert-success w-5 text-center' style="background-color:#3a763e; color: white ; " dir="rtl">  
-      <span id="da">0000.00</span> <span id="dj">كغ</span></input>
+      <span id="da" style="font-size: 25px;font-weight: 400;">0000</span> <span id="dj" style="font-size: 22px;font-weight: 400;">من الغنم</span></input>
   </div> 
   
   <span dir="rtl" id="alnis"> <svg height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
     width="32" height="32"
     viewBox="0 0 172 172"
     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M82.41667,7.16667c-45.44383,0 -82.41667,36.97283 -82.41667,82.41667c0,45.44383 36.97283,82.41667 82.41667,82.41667c45.44383,0 82.41667,-36.97283 82.41667,-82.41667c0,-45.44383 -36.97283,-82.41667 -82.41667,-82.41667zM82.41667,164.83333c-41.495,0 -75.25,-33.755 -75.25,-75.25c0,-41.495 33.755,-75.25 75.25,-75.25c41.495,0 75.25,33.755 75.25,75.25c0,41.495 -33.755,75.25 -75.25,75.25z"></path><path d="M82.41667,43c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v64.5c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-64.5c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path><path d="M82.41667,121.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v7.16667c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-7.16667c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path></g></g></svg>
-    الوزن لم يتجاوز النصاب</span>
+    العدد لم يتجاوز النصاب</span>
   <span dir="rtl" id="enter">
     <svg  height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="32" height="32"
 viewBox="0 0 172 172"
 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M82.41667,7.16667c-45.44383,0 -82.41667,36.97283 -82.41667,82.41667c0,45.44383 36.97283,82.41667 82.41667,82.41667c45.44383,0 82.41667,-36.97283 82.41667,-82.41667c0,-45.44383 -36.97283,-82.41667 -82.41667,-82.41667zM82.41667,164.83333c-41.495,0 -75.25,-33.755 -75.25,-75.25c0,-41.495 33.755,-75.25 75.25,-75.25c41.495,0 75.25,33.755 75.25,75.25c0,41.495 -33.755,75.25 -75.25,75.25z"></path><path d="M82.41667,43c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v64.5c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-64.5c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path><path d="M82.41667,121.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v7.16667c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-7.16667c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path></g></g></svg>
-    ادخل الوزن</span>
+    ادخل العدد</span>
 
-    <span dir="rtl" id="raytype">
-      <svg  height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-  width="32" height="32"
-  viewBox="0 0 172 172"
-  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M82.41667,7.16667c-45.44383,0 -82.41667,36.97283 -82.41667,82.41667c0,45.44383 36.97283,82.41667 82.41667,82.41667c45.44383,0 82.41667,-36.97283 82.41667,-82.41667c0,-45.44383 -36.97283,-82.41667 -82.41667,-82.41667zM82.41667,164.83333c-41.495,0 -75.25,-33.755 -75.25,-75.25c0,-41.495 33.755,-75.25 75.25,-75.25c41.495,0 75.25,33.755 75.25,75.25c0,41.495 -33.755,75.25 -75.25,75.25z"></path><path d="M82.41667,43c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v64.5c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-64.5c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path><path d="M82.41667,121.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333v7.16667c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-7.16667c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z"></path></g></g></svg>
-      اختر نوع الري</span>
+   
 
 
   </div> 
@@ -173,7 +167,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 <div class="row mt-5 text-center" >
     <div  class="col-md mt-3">
 
-<button type="text" class="btn btn-success mb-5"   dir="rtl" onclick="calcagrozakat(agro);"> حساب</button>
+<button type="text" class="btn btn-success mb-5"   dir="rtl" onclick=" calc_animal();"> حساب</button>
     </div>
 
 </div>    

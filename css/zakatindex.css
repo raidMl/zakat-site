@@ -1,22 +1,35 @@
 a{text-decoration: none;}
 
-a:hover{opacity: 0.7;}
+a:hover{opacity: 0.7;  }
     
 .imge{border-radius: 20%; border: 2px solid rgba(0, 0, 0, 0.747);}
+
     
 .imgg{border-radius: 45%; border: 1px solid rgba(0, 0, 0, 0.726)}
 .nav-item::after{ content: '';
         width: 0%;
         height: 3px;
-        background:  #1b7ddf;
+        background:rgba(0, 0, 0, 0.5) /*#1b7ddf; */;
         display: block;
         margin: auto;
         transition: 0.5s; }
 
+
+
         .nav-item:hover::after {
         width: 100%;
     }
-    
+
+
+
+    /* .nav-item::after:active {
+        width: 100%;
+        height: 3px;
+        background:rgba(0, 0, 0, 0.5); 
+        display: block;
+        margin: auto;
+        
+     }  */
 
 .div1{
 font-size: 	60Px;font-style: italic; 
@@ -71,7 +84,7 @@ display: block;text-shadow: 3px 3px 4Px #0f5a2dd9
 } 
 #framediv{  position: absolute;
     ;border: 1px solid rgba(7, 7, 7, 0.432) 
-    ;width:60%;
+    ;width:60%;z-index: 1;
     /* height:550px; */
     height: 70%;
     border-radius: 2%;
@@ -80,7 +93,6 @@ display: block;text-shadow: 3px 3px 4Px #0f5a2dd9
     margin: 10%;
      display: none;
      color: azure;
-     visibility: ;
     }
 #closeVideo{
 color: white;padding: 7px 12px;border-radius: 50%  ;font-family: sans-serif;position: absolute;top:0;right: 0;background-color: rgba(253, 2, 2, 0.89);
@@ -89,23 +101,158 @@ color: white;padding: 7px 12px;border-radius: 50%  ;font-family: sans-serif;posi
 nav li ul li a img{float: right; border: none;}
 
 
+#about{
+    /* background-color: rgb(175, 255, 175);height: 300px; */
+}
+
+#contact-us {
+    background: #f8f9fa00;
+    padding: 100px 0;
+}
+
+#contact-us p {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "COMIC SANS MS";
+}
+
+.social-media img {
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-media a:hover img {
+    transform: translateY(-10px);
+}
+
+#footer {
+    /* background-image: linear-gradient(to right, rgb(8, 165, 68), rgb(8, 105, 57)); */
+    background-color:#33af5c9e;z-index: 1;
+    color: rgb(7, 7, 7);border-top:  1px solid #00000029;
+}
+
+#footer img {
+    width: 100%;
+}
+
+.footer-box {
+    padding: 20px;
+}
+
+#footer .container .footer-box img {
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+.footer-box .fas {
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    background-image: linear-gradient(to right, rgb(5, 146, 92), rgb(11, 88, 46));
+    border-radius: 20px;
+}
+
+.footer-box .form-control {
+    box-shadow: none !important;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-box .btn-primary {
+    box-shadow: none !important;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(1, 182, 61), rgb(0, 88, 52));
+}
+.footer-box .btn-primary:hover {    background-image: linear-gradient(to right, rgb(44, 190, 93), rgb(34, 138, 95));
+
+}
+
+hr {
+    background-color: rgb(0, 0, 0);
+}
+
+ .copyright {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+ }
+
+ /* button scroll top ***************** */
+ #myBtn{
+	position: fixed; 
+  	z-index: 99; 
+	bottom: 20px; 
+	right: 20px; 
+	display: none; 
+	width: 52px;
+	height: 52px;
+	border: none; 
+	border-radius: 50%; 
+	outline: none; 
+	background-color: #44434a; 
+	cursor: pointer; 
+ }
+
+#myBtn:hover {
+	background-color: #1d1d21;
+}
+
+#myBtn img {
+	margin-bottom: 0.25rem;
+	width: 18px;
+}
+ 
+
+
+
+@media (max-width: 1000px) {    #frame{
+    width:100%;
+  /* height:550px; */
+  height: 300px;margin-top: 60px;
+  }
+
+  
+     
+      
+      
+  #framediv{height: 400px;margin-top: 100px;width: 80%;}
+
+}
+
 @media (max-width: 700px) {    #frame{
       width:100%;
     /* height:550px; */
-    height: 300px;
+    height: 300px;margin-top: 0px;
     }
+
     .div1{
         font-size: 	35px;font-style: italic; 
         font-weight: bold;text-align: center;height: 100%;
         padding: 150px 100px 0px 100px;}
        
+        
+        
+    #framediv{height: 150px;margin-top: 100px;width: 80%;}
+
      .div1 span img{height: 50px;width: 50px;}
 }
 
 
 @media (max-width: 388px) {  
+    #frame{
+        width:100%;
+      /* height:550px; */
+      height: 300px;margin-top: 0px;
+      }
     
-/* #frame{} */
+#framediv{height: 150px;margin-top: 100px;width: 80%;}
 
 .div1{
     font-size: 	25px;font-style: italic; 
@@ -113,5 +260,7 @@ nav li ul li a img{float: right; border: none;}
     padding: 150px 100px 0px 100px;}
    
  .div1 span img{height: 50px;width: 50px;}
+
+ /* #sah{padding-bottom:120px;} */
 }
 
