@@ -1,4 +1,5 @@
 # zakat-site
+#url :https://raidml.github.io/zakat-site/
 web site   for calculate zakate
 ![camp](https://user-images.githubusercontent.com/86850698/169354651-4905ef79-4f0c-47d8-bd66-96c65a5dfa5a.PNG)
 ![sqd](https://user-images.githubusercontent.com/86850698/169354729-e857d8e1-58e5-463e-87d0-3365c60e69a7.PNG)
